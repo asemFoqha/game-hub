@@ -40,7 +40,7 @@ function App() {
         </GridItem>
       </Show>
       <GridItem area={"main"}>
-        <HStack paddingLeft={3} spacing={5} marginBottom={5}>
+        <HStack paddingLeft={2} spacing={5} marginBottom={5}>
           <PlatformSelector
             selectedPlatform={filters.platform}
             onSelectPlatform={(platform) =>

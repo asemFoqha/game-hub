@@ -29,6 +29,7 @@ const PlatformIconList: FC<Props> = ({ platforms }) => {
     android: FaAndroid,
     nintendo: SiNintendo,
     ios: MdPhoneIphone,
+    web: BsGlobe,
   };
   return (
     <HStack marginY={1}>
