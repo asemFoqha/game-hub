@@ -14,8 +14,7 @@ const GameCard: FC<Props> = ({ game }) => {
     <Card borderRadius={10} overflow={"hidden"}>
       <Image src={getCropedImageUrl(game.background_image)} />
       <CardBody>
-        <Heading fontSize={"2xl"}>{game.name}</Heading>
-        <HStack justifyContent={"space-between"}>
+        <HStack justifyContent={"space-between"} marginBottom={2}>
           <PlatformIconList
             platforms={
               game.parent_platforms &&
@@ -24,6 +23,7 @@ const GameCard: FC<Props> = ({ game }) => {
           />
           <CriticScore score={game.metacritic} />
         </HStack>
+        <Heading fontSize={"2xl"}>{game.name}</Heading>
       </CardBody>
     </Card>
   );
